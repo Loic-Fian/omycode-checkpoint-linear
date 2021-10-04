@@ -1,0 +1,22 @@
+ALGORITHM prb2_2
+VAR
+    hashtab1: HASH_TABLE <INTEGER,INTEGER>;
+    hashtab2: HASH_TABLE <INTEGER,INTEGER>;
+    array1 : ARRAY_OF INTEGER[];
+    array2 : ARRAY_OF INTEGER[];
+BEGIN
+    Read(HTABLE1)
+    Read(HTABLE2)
+    A:= hashtab1.length
+    B:= hashtab2.length
+    array1:= HTABLE1.getkeys
+    array2 := HTABLE2.getkeys
+    FOR i FROM 0 TO A - 1  DO
+        FOR j FROM 0 TO B - 1 DO
+        IF (hashtab1.get(array1[i]) = hashtab2.get(array2[j])) DO
+        sum := sum + hashtab1.get(array1[i])+hashtab2.get(array2[j]))
+        END_IF
+        END_FOR
+    END_FOR
+    Write(sum)
+END
